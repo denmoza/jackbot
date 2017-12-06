@@ -1,2 +1,5 @@
-# exodusmod
-my private modbot used for exodus network server. not recommended to be used by anyone else xo.
+# jackbot
+A jackfilms bot made for the JackFilms Fam Squad discord server.
+
+Website: http://jacksfilms.me/
+Discord: https://discordapp.com/invite/2f6gAtx
