@@ -211,6 +211,17 @@ client.on("message", async message => {
 		message.channel.send(':ok_hand: Game changed.');
 		client.user.setPresence({ game: { name: (result), type: 0 } });	
 	}	
+
+	if(command === "setstatus") {
+		if(!message.member.roles.some(r=>["dec-Event", "klonadmin"].includes(r.name)) ) 
+			return message.reply(":x: You must be an admin or Toni to use this command.");
+		
+		if (!result) {
+			result = 'dnd';
+		}
+		message.channel.send(':ok_hand: Status changed. *Due to discord\'s limitations, statuses can sometimes take a while to update.*');
+		client.user.setStatus(result);
+	}
 });
 		
 
