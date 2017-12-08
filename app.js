@@ -4,7 +4,6 @@ const token = require('./settings.json').token;
 const settings = require("./settings.json");
 
 client.on('ready',() => {
-	
 	console.log('[jackbot]: I\'m online!');
 	client.user.setGame(`with ${client.users.size} users`);
 	client.user.setStatus('dnd');	
